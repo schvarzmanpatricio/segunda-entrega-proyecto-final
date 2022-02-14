@@ -1,0 +1,159 @@
+* {
+    margin: 0%;
+}
+/* tipografia */
+@font-face {
+    font-family: "varelaround-regular";
+    src: url("../tipografìas/VarelaRound-Regular.ttf");
+}
+body {
+    font-family: "varelaround-regular";
+    background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    
+}
+h2{
+    padding: 20px;
+    transform: skewX(10deg);
+
+}
+img{
+    margin: 10px;
+    border: solid;
+    transform: skewX(2deg);
+
+
+
+}
+footer {
+     background-color: #9921e8;
+     background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+}
+.tituloGrande {
+    color: red;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+#fondo {
+    background-color: rgb(236, 228, 228);
+}
+
+/* tipografia en archivo "nosotros" */
+.normal {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200%;
+} 
+.lineado{
+    
+    width: 250px;
+    display: flex;
+    flex-direction:column;
+  
+}
+.productos {
+    font-style:normal;
+    font-weight: 1000;
+    font-size: 20px;
+    text-align: left;
+    line-height: 200%;
+    padding: 20px;
+
+
+
+
+}
+
+.menu ul li {
+    display: inline-block;
+    width: 250px;
+
+}
+#gridArea {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-row-gap: 0px;
+    
+
+
+
+
+}
+
+/* media queries */
+/* desktop */
+@media (min-width: 1024px) {
+     #gridArea {
+            display: grid;
+            grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer"
+            ;
+            grid-template-columns: 1fr;
+
+        
+        
+        }
+        nav {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-flow: row-reverse;
+        }
+        span {
+            background-color: white;
+            margin: 0px;
+            padding: 0px;
+            height: 100vh;
+            width: 100vh;
+            text-align: center;
+            border-radius: 100px;
+    
+    
+          
+        
+        }
+    
+
+    
+        
+        
+
+}
+/* smartphone */
+@media (max-width: 480px) {
+    #gridArea {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 0px;
+
+    
+    
+    }
+  
+       
+
+    
+}
